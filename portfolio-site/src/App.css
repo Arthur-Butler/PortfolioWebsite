@@ -1,0 +1,196 @@
+body {
+  background-color: #534da8;
+  width: 100%;
+  height: 100%;
+}
+
+.Name {
+  position: relative;
+  width: 900px;
+  height: 350px;
+  cursor: pointer;
+  animation: blink 8s normal forwards;
+  border: 0.1cm solid rgba(22, 182, 212, 0.3);
+  border-radius: 0.5cm;
+  font-family: "Vibur", sans-serif;
+  font-size: 3rem;
+  letter-spacing: 10px;
+  color: #1f0e28;
+  padding: 20px;
+  background-size: fit-content;
+  margin-top: 1%;
+}
+
+.shadow {
+  width: 40px;
+  height: 40px;
+  font: size 60px;
+  box-shadow: 0.5px 0.5px 0 0.5px black, inset 1px 1px white,
+    inset -1px -1px #85898d;
+  margin-left: 24cm;
+}
+
+.shadow:hover {
+  background-color: red;
+}
+
+h1 {
+  padding: 10px;
+}
+
+.typewriter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.typewriter h2 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em; /* Adjust as needed */
+  animation: typing 5.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes blink {
+  0%,
+  18%,
+  20%,
+  50.1%,
+  60%,
+  65.1%,
+  80%,
+  90.1%,
+  92% {
+    color: #120c29;
+    text-shadow: none;
+    box-shadow: none;
+    border: 3px solid rgba(22, 182, 212, 0.3);
+  }
+
+  18.1%,
+  20.1%,
+  30%,
+  50%,
+  60.1%,
+  65%,
+  80.1%,
+  100% {
+    color: rgba(113, 213, 255, 0.5);
+    text-shadow: 0 0 10px #7971f5, 0 0 20px #7971f5, 0 0 40px #7971f5,
+      0 0 80px #7971f5, 0 0 160px #7971f5, 0 0 320px #7971f5, 0 0 640px #7971f5;
+    box-shadow: inset 0 0 10px rgba(113, 213, 255, 0.5),
+      inset 0 0 20px rgba(113, 213, 255, 0.5), 0 0 10px rgba(113, 213, 255, 0.3),
+      0 0 20px rgba(113, 213, 255, 0.3), 0 0 40px rgba(113, 213, 255, 0.3),
+      0 0 80px rgba(113, 213, 255, 0.3), 0 0 160px rgba(113, 213, 255, 0.3),
+      0 0 200px rgba(113, 213, 255, 0.3);
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: blue;
+  }
+}
+
+.App {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(4, 0, 241);
+  text-align: center;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.Header {
+  position:absolute;
+  z-index:1;
+  animation: scroll 70s linear infinite;
+  background: url("https://cdn.wallpapersafari.com/55/20/PD5uRm.jpg"), #111111;
+  perspective: 1000px;
+  perspective-origin: 50% 50%;
+  width: 1000px;
+  height: 600px;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  border-radius: 0.5cm;
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.page {
+    text-align:left;
+    margin-right:80%;
+    margin-top:0%;
+    color:white;
+    z-index: 0;
+    font-size:130%;
+    width:100%;
+}
+
+.Name:hover {
+  font-size: 3.2rem;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes scroll {
+  100% {
+    background-position: 0px -3000px;
+  }
+}
+
+@media (prefers-reduced-motion) {
+  .wrapper {
+    animation: scroll 200s linear infinite;
+  }
+}
+
+@media (min-width: 670px) {
+  .title {
+    font-size: 5rem;
+  }
+}
+
