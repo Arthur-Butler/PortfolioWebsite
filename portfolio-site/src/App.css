@@ -157,6 +157,7 @@ h1 {
     z-index: 0;
     font-size:130%;
     width:100%;
+    font-stretch: expanded;
 }
 
 .Name:hover {

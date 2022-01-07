@@ -10,13 +10,14 @@ function process() {
   if (percentage > 100) {
     percentage = 100;
   }
-  percentageElement.innerText = percentage;
+  percentage = percentage;
   processInterval();
 }
 
 function processInterval() {
   setTimeout(process, Math.random() * (1000 - 500) + 500)
 }
+
 
 function Landing() {
   //const { data, loading } = this.state;
@@ -25,13 +26,13 @@ function Landing() {
   const description = data.description;
   const pic = "images/" + data.image;
   return (
-    <div className="App">
+    <div className="App" onload={processInterval()}>
           <div className="page">
               <div id="container">
                   <h1>:(</h1>
                   <h2>Your PC ran into a very dedicated and hard working programmer's website.</h2>
                   <h2>
-                      <span id="percentage">0</span>% complete</h2>
+                      <span id="percentage">{percentage}</span>% complete</h2>
                   <div id="details">
                       <div id="qr">
                           <div id="image">
