@@ -168,6 +168,10 @@ h1 {
   color: #61dafb;
 }
 
+h3{
+  font-family: 'Press Start 2P', cursive;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
