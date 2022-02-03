@@ -92,7 +92,7 @@ class Landing extends Component {
               <h1>Arthur Nyaniso Butler</h1>
             </div>
             <h2>Back-end Software Engineer</h2>
-            <h3>press x to open portfolio</h3>
+            <h3>press x to continue</h3>
           </div>
         </header>
       </div>
