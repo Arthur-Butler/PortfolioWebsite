@@ -62,7 +62,7 @@ class Landing extends Component {
                   For more information about this issue and possible fixes,
                   visit
                   <br />
-                  <a href="www.linkedin.com/in/arthur-butler-7721591a4" style={{color:'#7971f5'}}>www.linkedin.com/in/arthur-butler-7721591a4</a>
+                  <a href="https://www.linkedin.com/in/arthur-butler-7721591a4" style={{color:'#7971f5'}}>www.linkedin.com/in/arthur-butler-7721591a4</a>
                 </h4>
                 <h5>
                   If you call an employer, give them this info:
