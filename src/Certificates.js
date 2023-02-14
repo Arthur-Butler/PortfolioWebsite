@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./App.css";
 import $ from 'jquery';
 import ReactTooltip from 'react-tooltip';
+import { FaArrowUp } from 'react-icons/fa';
 import Footer from "./Footer";
 
 function Certificates() {
@@ -40,6 +41,11 @@ function Certificates() {
         }
     }
 
+    const topFunction = () => {
+        $(".topPage").hide();
+        $("html, body").animate({ scrollTop: 0 }, "slow");
+    }
+
     return (
         <div className="Certificates" id="Certificates" onLoad={toolTip()}>
             <center>
@@ -57,6 +63,7 @@ function Certificates() {
                     <div onClick={()=>removeClass("card5")} className="card" id="card5" data-tip="click for full view" style={{backgroundImage:"url(images/hackathon.png)"}}><a href="https://www.younglings.academy/35-2/"><h3 className="hackathonLink">Link to Hackathon Winners Page</h3></a><ReactTooltip /></div>
                 </div>
             </center>
+            <button onClick={()=>topFunction()} className="topPage"><FaArrowUp className="arrowUp"/></button>
             <Footer/>
         </div>
     );

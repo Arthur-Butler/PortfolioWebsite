@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./App.css";
 import $ from 'jquery';
 import ReactTooltip from 'react-tooltip';
+import { FaArrowUp } from 'react-icons/fa';
 import Footer from "./Footer";
 
 function Projects() {
@@ -28,6 +29,12 @@ function Projects() {
         // $(`#${variable}`).css('min-width','700px!important');
     }
 
+    const topFunction = () => {
+        $(".topPage").hide();
+        $("html, body").animate({ scrollTop: 0 }, "slow");
+    }
+
+
     return (
         <div class="Projects" id="Projects">
             <center>
@@ -43,6 +50,7 @@ function Projects() {
                     <div className="grid-project"><h2>Vernon's Academy of dance Website</h2><p className="projDescrip">Built a website for a local ballroom and latin american dance teacher and certified professional judge. The purpose of which was to advertise and bring awareness to his dance cool and allow potential dancers to conatact him and book through the website.</p><a href="https://kens-gallery.web.app/"><img className="project-img" src="images/VernonsAcademy.png" alt="KensGallery"/></a><div className="skillsList"><div className="skill-item"><img className="applied-skill" src="images/firebase.png" alt="firebase"/></div><div className="skill-item"><img className="applied-skill" src="images/react.png" alt="react"/></div><div className="skill-item"><img className="applied-skill" src="images/javascript.png" alt="javascript"/></div><div className="skill-item"><img className="applied-skill" src="images/html.png" alt="html"/></div></div></div>
                 </div>
             </center>
+            <button onClick={()=>topFunction()} className="topPage"><FaArrowUp className="arrowUp"/></button>
             <Footer/>
         </div>
                 //    <div className="grid-item"><img className="skill-image" src="images/python.png" alt="Headshot" /></div>
