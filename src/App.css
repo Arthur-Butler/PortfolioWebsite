@@ -327,11 +327,15 @@ h1 {
   width: 50%;
 }
 
+.Name h1{
+  font-size:1.5em;
+}
+
 .nav, .nav:focus {
   cursor: pointer;
   position: relative;
   display: inline-block;
-  padding: 1.5rem 3rem;
+  padding: 1.5rem 2.5rem;
   text-decoration: none;
   /* background: black; */
   transition: all .4s ease-in-out;
@@ -931,7 +935,7 @@ h3{
     top: 0%;
     bottom: 0%;
     height: 100%;
-    width: 15%;
+    width: 18%;
   }
 
   .clicked::before {
