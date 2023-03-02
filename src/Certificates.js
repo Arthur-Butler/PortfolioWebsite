@@ -17,7 +17,7 @@ function Certificates() {
     } else {
       console.log(variable);
       $(`.card`).removeClass("active");
-      $(".cardBG").css("display", "block");
+      // $(".cardBG").css("display", "block");
       if ($(window).width() < 768) {
         $(`.card`).attr("data-tip", "click for full view");
       }
@@ -121,6 +121,21 @@ function Certificates() {
           >
             <ReactTooltip />
           </div>
+        </div>
+        <div className="galleryGrid">
+          <img className="gridItem" src="images/MicrosoftCertificate.jpeg" />
+          <img className="gridItem" src="images/JSUdemyCertificate.jpg" />
+          <img className="gridItem" src="images/UdemyHTMLCSS.jpg" />
+          <a href="https://www.younglings.academy/35-2/">
+            <img className="gridItem" src="images/hackathon.png" />
+            <center>
+              <h3 className="hackathonLink">Link to Hackathon Winners Page</h3>
+            </center>
+          </a>
+          <img
+            className="gridItem"
+            src="images/ResposiveWebDesignCertificate.png"
+          />
         </div>
       </center>
       <button onClick={() => topFunction()} className="topPage">
