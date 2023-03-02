@@ -126,8 +126,8 @@ function Certificates() {
           <img className="gridItem" src="images/MicrosoftCertificate.jpeg" />
           <img className="gridItem" src="images/JSUdemyCertificate.jpg" />
           <img className="gridItem" src="images/UdemyHTMLCSS.jpg" />
-          <a href="https://www.younglings.academy/35-2/">
-            <img className="gridItem" src="images/hackathon.png" />
+          <a className="gridItem" href="https://www.younglings.academy/35-2/">
+            <img src="images/hackathon.png" style="width: 100%;" />
             <center>
               <h3 className="hackathonLink">Link to Hackathon Winners Page</h3>
             </center>
