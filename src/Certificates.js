@@ -113,7 +113,7 @@ function Certificates() {
           <div
             onClick={() => removeClass("card6")}
             className="card"
-            id="card1"
+            id="card6"
             data-tip="click for full view"
             style={{
               backgroundImage: "url(images/ResposiveWebDesignCertificate.png)",
