@@ -218,9 +218,11 @@ h1 {
   border-style: solid;
   border-color: rgb(0, 0, 0);
   margin-top: 10px;
-  margin-left: 50px;
+  margin-left: 40px;
   padding-top: 10px;
   padding-bottom: 10px;
+  padding-right: 10PX;
+  left:10px;
 }
 
 .typewriter h2 {
@@ -383,7 +385,7 @@ h1 {
   top: 0%;
   bottom: 0%;
   height: 100%;
-  width: 15%;
+  width: fit-content;
 }
 
 .Navbar {
